@@ -1,0 +1,147 @@
+h2{
+    color: green;
+}
+/*since h2 is specified here, the unmodified h2 headings will become green, had we modified already premodified
+h1 headings here, the style tag method headings follow, inline method headings have their own priorities*/
+p{
+    color: yellow;
+}
+button{
+    color:chocolate;
+    background-color: bisque;
+}
+body{
+    background-color:lavender;
+}
+#obox{ 
+    background-color:blue;
+    font-size: 25px;
+}
+#ibox{
+    font-size: 10px;
+}
+.heading{ 
+    color: red;
+}
+#button{
+    background-color: green;
+}
+/*you can use ctrl+slash to convert to and fro a comment from selected part of text*/
+*{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#level2{
+    height: 100px;
+    width: 100px;
+    background-color: pink;
+    border-style: dotted;
+    border-color:brown;
+    border-width: 50px;
+    text-align: center;
+    border-radius: 20%;
+    padding-top: 50px;
+    margin-top: 50px;
+}
+*{
+    padding: 0;
+    margin: 0;
+} /*practice of big projects to start from 0, instead of deafult*/
+#Q4{
+    background-color: #0f1111;
+    border: 5px solid white;
+    height: 60px;
+    color:white;
+}
+#logo{
+    color: #ff9100;
+    font-size: 25px;
+    margin-left: 0px;
+    margin-right: 150px;
+    text-decoration: none;
+}
+.white{
+    color: white;
+    margin-right: 150px;
+    text-decoration: none;
+}
+#smin{
+    background-color: #f08804;
+    color: white;  
+}
+#display{
+    background-color: purple;
+    display: inline;
+}
+#playground{
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    margin: 25px;
+    display: inline-block;  /*this disables top and bottom margins of boxes making shit messy (inline-block comes in here)*/
+}
+.Q5{
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border:10px solid chartreuse;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+#content{
+    height:500px;
+}
+#summer{
+    height: 200px;
+    width: 300px;
+    background-image: url("summer outfit lmao.jpg");
+    background-size: cover;
+    position: fixed;
+    right: 10px;
+    top: 50px;
+}
+.navbarQ7{
+    background-color: pink;
+    display: flex;
+    justify-content: space-evenly;
+}
+.lol{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style-type: none;
+    background-color: aqua;
+    display: inline;
+}
+.outerdiv{
+    height:400px;
+    width: 400px;
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerdiv{
+    height:100px;
+    width: 100px;
+    background-color:brown;
+}
+#loader{
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 20px solid white;
+    border-top: 20px solid black;
+    animation: spinAnimation 3s ease-in 0s infinite normal;
+}
+@keyframes spinAnimation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{ transform: rotate(360deg);
+    }
+}

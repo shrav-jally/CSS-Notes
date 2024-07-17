@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      h1{
+          color: blue;
+        }
+      #button{
+        background-color: blue;
+      }
+    </style>
+    <link rel="stylesheet" href="style.css"> <!--this links css file w html file-->
+</head>
+<body>
+    <section>
+    <h1 style="color: pink;">Inline Method of Adding Style</h1>
+    <h1>Style Tag Method of Adding Style (dealt with in head section of boilerplate code)</h1>
+    <h1>All h1 tags get the same color setting, but the one set to pink isn't changing see :|</h1>
+    <h2>This is to show linking of css file and html file</h2>
+    <p>You can edit paragraph ka colour in stylesheet</p>
+    <button>Pick me!</button>
+    </section>
+
+    <section>
+    <!--Q1,Q2-->
+    <div id="obox">
+     <h3 class="heading">random text</h3>
+     <div>
+     <h2 class="heading">more random text</h2>
+     </div id="ibox">
+     <h1 class="heading">so much random text lmao</h1>
+    </div>
+    <button style="background-color: pink;" id="button">DAMN.</button> <!--Q3, this button has all 3 modifications-->
+    </section>
+
+    <section><!--usage of inspect-->
+      <h1 id="level2">Heading</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+         Architecto nostrum nobis omnis aliquid ipsa! Non archite laboriosam!</p>
+      <div id="level2">
+        This is div.
+      </div>
+      <button>Click me!</button>
+      <br>
+      <br>
+    </section>
+
+    <!--traffic light ryb homweork anta lmao-->
+
+    <section>
+      <div id="Q4">
+      <a id="logo" href="#">amazon.in</a> 
+      <a class="white" href="#">Account</a>
+      <a class="white" href="#">My Cart</a>
+      <a class="white" href="#">Contact Us</a>
+      <input type="text" value="search Amazon.in">
+      <button id="smin">Search</button>
+      </div>
+    </section>
+
+    <section>
+      <div id="display">this is div lmao</div>
+      <button>this be button</button>
+      <h3>we're exploring display properties atp :)</h3>
+      <div id="playground" style="background-color:red">box1</div>
+      <div id="playground" style="background-color:green">box2</div>
+      <div id="playground" style="background-color:blue">box3</div>
+    </section>
+
+    <section> <!--Q5-->
+      <header>
+        <div id="Q4">
+        <a id="logo" href="#">amazon.in</a> 
+        <a class="white" href="#">Account</a>
+        <a class="white" href="#">My Cart</a>
+        <a class="white" href="#">Contact Us</a>
+        <input type="text" value="search Amazon.in">
+        <button id="smin">Search</button>
+        </div>
+      </header>
+
+      <div id="content">
+        <div class="Q5" style="background-color: rgba(122, 24, 96, 0.5)";><h3>Groceries</h3></div>
+        <div class="Q5" style="background-color: rgba(57, 66, 9, 0.5)";><h3>Products</h3></div>
+        <div class="Q5" style="background-color: rgba(26, 44, 120, 0.5)";><h3>Movies</h3></div>
+      </div>
+        <footer><h4>&copy &#169</h4></footer>
+    </section>
+
+    <section> <!--Q6-->
+      <div id="summer">
+        Summer!!
+      </div>
+    </section>
+
+    <section>
+      <div class="navbarQ7"> <!--the container (the flexbox)-->
+        <ul>
+          <li><a href="#" class="lol">Home</a></li>
+          <li><a href="#" class="lol">About Us</a></li>
+          <li><a href="#" class="lol">Contact Us</a></li>
+          <li><a href="#" class="lol">Help</a></li>
+        </ul>
+      </div>
+      <div class="outerdiv">
+        <div class="innerdiv"></div>
+      </div>
+    </section>
+
+    <section>
+      <div id="loader">
+         
+
+      </div>
+
+
+    </section>
+
+
+
+
+
+
+  </body>
+</html>
+
+
+CSS NOTES 
+
++ cascading style sheet, describes style of a document 
++ >right click >inspect always useful to discover shit in existing web pages
++ basic syntax      selector { 
+                                property: value;
+                             }
++ the professional way is to deal with css and html is separate files and link them (external stylesheet)
++ 3 ways to add style, inline method, style tag, external styesheet (inline has most priority)
+  (priority of whichever one (style tag/stylesheet) comes latter in head is followed)
++ color property sets foreground color
+  color: pink;
++ there's a foreground and a background in color division on a webpage
+  background-color: pink;
++ color systems: RGB, Hex(0-15)
+ red, green, blue.. .. .. range is 0-255/00-ff, use color picker on google to get values
+ color: rgb(x, y, z);
+ color: #000000;
++ coolors, free website helping with color palettes for projects
++ selectors: universal (*), id (h1), element(#myId), class (.myClass)
++ text properties (vss shortcut (lorem) to generate random text)
+  text-align: left/right/center/start/end;
+  text-decoration: underline/overline/line-through/none; (color addable to line, line shape modifiable)
+  text-decoration-style: solid/double/dotted/dashed/wavy;
+  font-weight: normal/bold/bolder/lighter/(100-900); 
+  font-family: arial; (priority decreases from left to right)
+  font-size: (1-smin)px;
+  line-height: (1-smin)px;
+  text-transform: uppercase/lowercase/capitalize/none;
+
+
++ mdn "topic name" on google to learn about it
++ properties set to parent tag are usually inherited to child tags/content
++ content in blue, margin in orange (inspection page), avoid mistakes to avoid 'invalid property value' )))
+
+
++ BOX model in CSS (height, width, border shorthand (border: width style color;),
+  border(-width/style(solid/dotted/dashed/radius)/color), padding shorthand (padding: T R B L;) (1 value => all),
+  padding(-left/right/top/bottom), margin(-right/left/top/bottom)) --in px
++ display: inline( span/button/input/a) /block( div/h1) /inline-block/none
+  display: none( gayab); and visibility: hidden( gayab)/none( element ka space reserved); are not the same thing
++ color: rgba(0-255, 0-255, 0-255, 0-1); )))
+
+
++ units in CSS
+  absolute- px, cm, in
+  relative- %( size as relative to element's parent object), em, rem, vh, vw
++ position: static( doesn't move at all anytime)/ relative( relative to it's self's original position) 
+  / absolute( removed from flow, relative to it's parent's position)/ fixed( removed from flow, relative to browser's position)
+  / sticky (sets how an element is positioned in a document) --- sticky (enters navbar position after certain amount of scroll)
+  /fixed(always at navbar position) can be used in navbar properties
+  related to properties top/ right/ left/ bottom/ z-index( decides stack index of elements)
++ backgroung-image: url("image.jpeg");
+  background-size: cover/ contain/ auto )))
+
++ flexbox (1D layout method for arranging items in rows and columns)
+  flex container, flex item, main axis, cross axis
+  flexbox-direction: row( default)/ row-reverse/ column/ column-reverse
+  the flexbox components try to remain in the container afa content size allows self modification
+  justify-content: flex-start/ flex-end/ centre/ space-evenly/ space-around/ space-between  (along main axis)
+  flex-wrap: non-wrap/ wrap/ wrap-reverse
+  align-content: centre/ flex-start
+  align-items: centre/ flex-start
+  (diff btwn item and content)
+  align-self: flex-end (alignment of individual item along cross axis) (more priority than align-items)
+  flex-grow: (growth of flex item relative to other items according to space available)
+  flex-shrink: (can be decimal numbers)
+
++ media queries( help create a responsive website)
+  @media(width/max-width/min-width: #px){
+    div{
+      properties n shi that alter w px size of screen like bgc
+    }
+  }
+ex@media(min-width: 200px)and(max-width: 300px){
+    div{
+      background-color: red;
+    }
+  } )))
+
++ advanced CSS
++ transitions( define transition between 2 states of element)
+  transition-property:
+  transition-duration: 2s;
+  transition-timing-function: steps(5)/ease-in;
+  transition-delay: 1s;
+  (transition shorthand) transition: (in given order and 1 space);
+  div:hover{ in css is change of state when pointer hovers on it}
+  div:active{ this and above are pseudo classes}
+
++ css transform( 2D, 3D transformations to element)
+  rotate/-X/-Y/-Z: z/y/x/nothing #deg;
+  transform: rotate(#deg);
+  transform: scale(can be decimal number)/ scaleX()/ scaleY()/ scale(x,y);
+  transform: translate( #px)/ translateX()/ translateY/ translate(x,y);
+  transform: skew(#deg); (stretching effect)
+
++ animation (smoother transitions) (@keyframes is a template)
+  @keyframes myName{
+    0%{ 
+      font-size: #px
+    }
+    50%{ 
+      font-size: #px
+    }
+    100%{ 
+      font-size: #px
+    }
+( the above to add > 2 steps, below for 2 steps)
+    from{ font-size: #px;}
+    to{ font-size: #px;}
+  }
+  animation properties (has shorthand in given order itself)
+  animation-name/-duration/-timing-function/-delay/-iteration-count/-direction: shi;
+  animation-direction: normal/reverse/alternate/alternate-re;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- CASCADING STYLE SHEETS
+Level 1 - 
+    •Intro
+    •CSS Syntax
+    •Types of adding CSS
+    •Colors
+    •Background Color
+    •Types of Selectors
+    •# Id and . class selector
+    •Pratice set 1 
+    •Text properties
+    •Font properties
+    •Absolute Units in CSS
+    •Pratice set 2 
+Level 2
+    •Box Model in CSS
+    •Pratice set 3 
+    •Display property
+    •Alpha Channel
+    •Pratice set 4 
+Level 3
+    •Relative Units in CSS
+    •Position properties
+    •Z-index
+    •Background size
+    •Pratice set 5 
+Level 4 
+    •Flexbox
+    •Pratice set 6 
+Level 5 
+    Transition 
+-->
+
+
+ 
